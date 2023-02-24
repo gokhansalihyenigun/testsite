@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Birim Fiyat Hesaplayıcısı</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Birim Fiyat Hesaplayıcısı</h1>
+	<form>
+		<label for="cpu">CPU:</label>
+		<input type="number" id="cpu" name="cpu" min="0" value="0"><br><br>
+
+		<label for="ram">RAM:</label>
+		<input type="number" id="ram" name="ram" min="0" value="0"><br><br>
+
+		<label for="disk">Disk:</label>
+		<input type="number" id="disk" name="disk" min="0" value="0"><br><br>
+
+		<input type="button" value="Hesapla" onclick="calculateCost()"><br><br>
+
+		<label for="total">Toplam Fiyat:</label>
+		<input type="text" id="total" name="total" readonly>
+	</form>
+	<script src="script.js"></script>
+</body>
+</html>
